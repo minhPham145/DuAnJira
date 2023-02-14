@@ -1,0 +1,396 @@
+body {
+	font-family: 'Poppins', sans-serif;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	user-select: none;
+	height: 100vh;
+	width: 100%;
+	background: linear-gradient(to top, rgba(0, 0, 0, 0.5) 50%, rgba(0, 0, 0, 0.5) 50%), url(./assets/imgCyberbugs/jirabg.jpg);
+
+	background-position: center top;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+button:focus {
+	outline: none !important;
+}
+
+svg {
+	vertical-align: unset !important;
+}
+
+.navbar {
+	padding: 1rem 3rem;
+	margin-bottom: 50px;
+	align-items: baseline;
+}
+
+.navbar-brand {
+	font-size: 30px;
+}
+
+.navbar-toggler span svg {
+	transition: color 0.3s ease-in-out;
+}
+
+.navbar-toggler:hover span svg {
+	color: #eb6440;
+}
+
+.navbar a {
+	color: #fff;
+	font-weight: bold;
+	transition: color 0.3s ease-in-out;
+}
+
+.navbar .nav-link:hover {
+	color: #eb6440;
+}
+
+.navLink:hover {
+	text-decoration: none;
+}
+
+.tox.tox-tinymce {
+	border: 1px solid #ced4da;
+	border-radius: 0;
+}
+
+.header .breadcrumb {
+	margin-bottom: 0;
+	padding-left: 0px;
+}
+
+.antd-table-cell p {
+	margin: 0;
+}
+
+/*----------------------- login button----------------- */
+.buttonSocial {
+	color: #fff;
+}
+
+.buttonSocial.facebook {
+	background-color: rgb(59, 89, 152);
+}
+
+.buttonSocial.twitter {
+	background-color: #1677ff;
+}
+
+/* =====================jira========================= */
+
+.jira {
+	height: 100vh;
+	/* font-family: 'Roboto', sans-serif; */
+	font-family: 'Poppins', sans-serif;
+
+	font-weight: 300;
+	display: flex;
+	color: #044343;
+	font-size: 14px;
+}
+
+.jira .form-control {
+	border-radius: 0;
+	color: #044343;
+}
+
+.jira .form-control.inputComment {
+	border-radius: 0;
+	color: #044343a6;
+}
+
+.jira .btn-outline-success {
+	color: #045757;
+	border-color: #045757;
+}
+
+.jira .btn-outline-success:hover {
+	color: #fff;
+	background-color: #045757;
+	border-color: #045757;
+}
+
+/*----------------------------- Menu-------------------- */
+.menu {
+	height: 100vh;
+	width: 18%;
+	background-color: #e4e4e4;
+	color: #fff;
+	flex: none;
+}
+
+.menu .account {
+	display: flex;
+	justify-content: center;
+	padding: 5% 16%;
+	margin-bottom: 5%;
+}
+
+.menu .account .avatar {
+	padding-top: 13%;
+	margin-right: 10px;
+}
+
+.menu .account .avatar img {
+	border: 1px solid #044343;
+}
+
+.menu .account .account-info {
+	padding-top: 12%;
+	padding-bottom: 5%;
+	text-align: left;
+	color: #044343;
+}
+
+.menu .account .account-info p:first-child {
+	margin-bottom: 3px;
+	font-weight: 500;
+}
+
+.menu .control {
+	padding: 0% 8%;
+	text-align: left;
+}
+
+.menu .control div {
+	padding: 5% 7%;
+	cursor: pointer;
+	border-radius: 3px;
+	color: #044343;
+}
+
+.menu .control a.navLink.actived div {
+	border: 1px solid #044343;
+}
+
+.menu .control div .title {
+	margin-left: 10px;
+}
+
+/* ================Main======================= */
+.main {
+	padding: 0% 2%;
+}
+
+.main .info .search-block {
+	position: relative;
+}
+
+.main .info .search-block .search {
+	height: 32px;
+	width: 200px;
+	background-color: rgb(250, 251, 252);
+	border-radius: 3px;
+	padding-left: 32px;
+}
+
+.main .info .search-block .fa-search {
+	position: absolute;
+	left: 5%;
+	top: 30%;
+	color: #67748b;
+}
+
+.main .info .avatar-group {
+	margin-left: 20px;
+}
+
+.avatar img {
+	width: 40px;
+	border: 1px solid transparent;
+	height: 40px;
+	border-radius: 50%;
+}
+
+.main .info .text {
+	text-align: center;
+	line-height: 35px;
+}
+
+.main .content {
+	margin-top: 20px;
+}
+
+.main .content .card {
+	margin-right: 10px;
+	background: rgb(244, 245, 247);
+	width: 17rem;
+}
+
+.main .content .card .card-header {
+	border: none;
+	background-color: transparent;
+	color: #044343;
+}
+
+.main .content .card .list-group {
+	border: none;
+	height: 100%;
+}
+
+.main .content .card .list-group .list-group-item {
+	margin: 5px;
+	box-shadow: rgb(9 30 66 / 25%) 0px 1px 2px 0px;
+	border: none;
+	padding: 10px;
+}
+
+.main .content .card .list-group .list-group-item:hover {
+	background: #e4e4e4;
+}
+
+.list-group-item .block {
+	justify-content: space-between;
+}
+
+/* -------------project management ---------------*/
+.card__user__assign {
+	border: 1px solid rgba(0, 0, 0, 0.125);
+	border-radius: 0.25rem;
+	display: flex;
+	align-items: center;
+	padding: 0.5rem;
+}
+
+/* main info avatar */
+.avatar__user__info {
+	transition: transform 0.3s;
+}
+
+.avatar__user__info:hover {
+	transform: translateY(-10px);
+}
+
+/* form create task */
+.form__createTask label {
+	color: rgb(66, 78, 99);
+}
+
+.description__task {
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 3;
+
+	overflow: hidden;
+	margin-bottom: 15px;
+	line-height: 25px;
+}
+
+/* asssign item edit task */
+
+.assignees .item {
+	background: #e9eaf0;
+	border-radius: 5px;
+}
+
+.assignees .item.addmores {
+	margin-right: 5px;
+	background: none;
+	border-radius: 20px;
+}
+.assignees .item .avatar img {
+	width: 30px;
+	height: 30px;
+}
+
+.assignees .item .name {
+	margin: 0;
+	white-space: nowrap;
+	margin-left: 5px;
+}
+
+.assignees .item i {
+	cursor: pointer;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+/* sidebar */
+.sideBar {
+	width: 200px;
+	height: 100vh;
+	background: #044343;
+	transition: width 0.3s ease-in-out;
+	flex: none;
+}
+
+.sideBarClosed {
+	width: 80px;
+	height: 100vh;
+	background: #044343;
+	transition: width 0.3s ease-in-out;
+	flex: none;
+}
+
+.itemSidebar {
+	display: flex;
+	height: 40px;
+	transition: background-color 0.3s ease-in-out;
+}
+
+.itemSidebar:hover {
+	background-color: #045757;
+	cursor: pointer;
+}
+
+.itemSidebar .title {
+	font-size: 16px;
+	color: #fff;
+	line-height: 40px;
+	margin-left: 15px;
+	white-space: nowrap;
+	transition: opacity 0.3s ease-in-out;
+}
+
+.sideBarClosed .itemSidebar .title {
+	opacity: 0;
+}
+
+.itemSidebar span svg {
+	vertical-align: -2px !important;
+}
+
+.itemSidebar .iconItem {
+	font-size: 20px;
+	color: #fff;
+	line-height: 40px;
+	padding-left: 30px;
+}
+
+.itemSidebar .iconCollapse {
+	font-size: 16px;
+	color: #fff;
+	line-height: 40px;
+	padding: 0 32px;
+}
+
+/* antd  */
+.ant-table-cell span {
+	color: #044343;
+}
+
+.ant-table-row {
+	color: #044343;
+}
+
+/* modal  */
+.modal-backdrop {
+	z-index: 1000;
+}
+
+.modal {
+	z-index: 1010;
+}
+
+.actionCommentBtn {
+	display: inline-block;
+	cursor: pointer;
+}
+
+.actionCommentBtn:hover {
+	color: #000000;
+	transform: scale(1.1);
+}
