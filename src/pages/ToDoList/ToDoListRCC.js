@@ -25,7 +25,7 @@ export default class ToDoListRCC extends Component {
 			});
 		});
 		promise.catch(error => {
-			console.log(error);
+			alert(error);
 		});
 	};
 

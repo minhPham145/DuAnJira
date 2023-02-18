@@ -13,7 +13,9 @@ function* getAllProjectCategorySaga() {
 				data: data.content,
 			});
 		}
-	} catch (error) {}
+	} catch (error) {
+		alert(error);
+	}
 }
 
 export function* watchGetAllProjectCategorySaga() {

@@ -12,7 +12,9 @@ function* getAllStatusSaga() {
 				arrStatus: data.content,
 			});
 		}
-	} catch (error) {}
+	} catch (error) {
+		alert(error);
+	}
 }
 
 export function* watchGetAllStatusSaga() {

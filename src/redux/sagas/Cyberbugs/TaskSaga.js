@@ -41,7 +41,9 @@ function* getTaskDetailSaga(action) {
 				taskDetailModal: data.content,
 			});
 		}
-	} catch (error) {}
+	} catch (error) {
+		alert(error);
+	}
 }
 
 export function* watchGetTaskDetailSaga() {

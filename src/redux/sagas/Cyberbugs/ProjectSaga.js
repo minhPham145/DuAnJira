@@ -53,7 +53,9 @@ function* getAllProjectSaga() {
 				projectList: data.content,
 			});
 		}
-	} catch (error) {}
+	} catch (error) {
+		alert(error);
+	}
 }
 
 export function* watchGetAllProjectSaga() {
@@ -76,7 +78,9 @@ function* getListProjectSaga(action) {
 				projectId: data.content[0].id,
 			});
 		}
-	} catch (error) {}
+	} catch (error) {
+		alert(error);
+	}
 }
 
 export function* watchGetListProjectSaga() {
@@ -140,7 +144,9 @@ function* getProjectDetailSaga(action) {
 				projectDetail: data.content,
 			});
 		}
-	} catch (error) {}
+	} catch (error) {
+		alert(error);
+	}
 }
 
 export function* watchGetProjectDetailSaga() {

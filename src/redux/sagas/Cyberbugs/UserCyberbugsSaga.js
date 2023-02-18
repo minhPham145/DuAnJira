@@ -48,7 +48,9 @@ function* getUserSaga(action) {
 				lstUserSearch: data.content,
 			});
 		}
-	} catch (error) {}
+	} catch (error) {
+		alert(error);
+	}
 }
 
 export function* watchGetUserSaga() {
@@ -63,7 +65,9 @@ function* assignUserProjectSaga(action) {
 		if (status === STATUS_CODE.SUCCESS) {
 			yield put({ type: GET_ALL_PROJECT_SAGA });
 		}
-	} catch (error) {}
+	} catch (error) {
+		alert(error);
+	}
 }
 
 export function* watchAssignUserProjectSaga() {
@@ -78,7 +82,9 @@ function* removeUserProjectSaga(action) {
 		if (status === STATUS_CODE.SUCCESS) {
 			yield put({ type: GET_ALL_PROJECT_SAGA });
 		}
-	} catch (error) {}
+	} catch (error) {
+		alert(error);
+	}
 }
 
 export function* watchRemoveUserProjectSaga() {
@@ -144,7 +150,9 @@ function* getUserManagementSaga(action) {
 				userManagement: data.content,
 			});
 		}
-	} catch (error) {}
+	} catch (error) {
+		alert(error);
+	}
 }
 
 export function* watchGetUserManagementSaga() {

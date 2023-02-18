@@ -76,7 +76,9 @@ function* rejectTaskApiSaga({ taskName }) {
 		if (status === STATUS_CODE.SUCCESS) {
 			yield put({ type: GET_TASKLIST_API_SAGA });
 		}
-	} catch (error) {}
+	} catch (error) {
+		alert(error);
+	}
 }
 
 export function* watchRejectTaskApiSaga() {

@@ -13,7 +13,9 @@ function* getAllTaskTypeSaga() {
 				arrTaskType: data.content,
 			});
 		}
-	} catch (error) {}
+	} catch (error) {
+		alert(error);
+	}
 }
 
 export function* watchGetAllTaskTypeSaga() {

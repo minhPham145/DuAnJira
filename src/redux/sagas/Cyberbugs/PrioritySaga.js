@@ -13,7 +13,9 @@ function* getAllPrioritySaga() {
 				arrPriority: data.content,
 			});
 		}
-	} catch (error) {}
+	} catch (error) {
+		alert(error);
+	}
 }
 
 export function* watchGetAllPrioritySaga() {
